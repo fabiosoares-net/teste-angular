@@ -1,0 +1,43 @@
+<div>
+    <!-- <div style="display: block">
+      <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"></canvas>
+    </div> -->
+
+    <div style="display: block">
+        <canvas baseChart
+                [data]="pieChartData"
+                [labels]="pieChartLabels"
+                [chartType]="pieChartType">
+        </canvas>
+    </div>
+    <br />
+    <div class="container">
+        <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Despesas</th>
+                <th scope="col">Valores (R$)</th>
+                <th scope="col">%</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of despesasOperacionais">
+                <td>{{item.despesa}}</td>
+                <td>{{item.valor}}</td>
+                <td>{{item.percentual}} %</td>
+              </tr>
+              <tr>
+                <td><b>Total</b> </td>
+                <td><b>{{totalDespesa.totalValor}}</b> </td>
+                <td><b>{{totalDespesa.totalPercentual}} %</b> </td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+
+  </div>
