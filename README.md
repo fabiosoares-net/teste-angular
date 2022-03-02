@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.7.
 
+## Executando o aplicativo com Node.js
+
+1. Execute `npm install` para instalar as dependências do aplicativo
+
+1. Execute `ng serve -o` em uma janela de terminal separada para iniciar a aplicação web no seu navegador. Com o comando `-o` o navegador abre sozinho.
+
+1. Acesse http://localhost:4200/ em seu navegador 
+
+Basta clonar o projeto ou baixar e extrair o .zip para começar.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
